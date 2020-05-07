@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
 
   get '/food_form' do
-    @food_form
+    @food_form = params[]
     erb :food_form
   end
 
