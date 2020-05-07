@@ -12,6 +12,7 @@ class App < Sinatra::Base
   :name => "Sam",
   :favorite_food => "Green Eggs and Ham"
   }
+  params.to_s
   string = "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
   end
 
