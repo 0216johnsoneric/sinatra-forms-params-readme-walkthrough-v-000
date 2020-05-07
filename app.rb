@@ -9,7 +9,7 @@ class App < Sinatra::Base
 
   post '/food' do
     @name = params[:name].to_s
-    @favorite_food = params[:favorite_food]
+    @favorite_food = params[:favorite_food].to_s
     params = {
   # :name => "Sam",
   # :favorite_food => "Green Eggs and Ham"
